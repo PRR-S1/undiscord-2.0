@@ -1,131 +1,57 @@
-# Undiscord - Delete all messages in a Discord channel or DM
-<!-- shields -->
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/victornpb/undiscord?color=%235865f2&display_name=tag&label=Undiscord&style=flat-square)][greasyfork_url]
-[![GitHub Release Date](https://img.shields.io/github/release-date/victornpb/undiscord?style=flat-square)](https://github.com/victornpb/undiscord/releases)
-[![GitHub License](https://img.shields.io/github/license/victornpb/undiscord?style=flat-square)](https://github.com/victornpb/undiscord/blob/master/LICENSE)
-[![CodeFactor](https://www.codefactor.io/repository/github/victornpb/undiscord/badge?style=flat-square)](https://www.codefactor.io/repository/github/victornpb/undiscord?style=flat-square)
-![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/victornpb/undiscord?style=flat-square)
-[![GitHub Stars](https://img.shields.io/github/stars/victornpb/undiscord?style=flat-square)](https://github.com/victornpb/undiscord/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/victornpb/undiscord?style=flat-square)](https://github.com/victornpb/undiscord/network/members)
-[![GitHub Discussions](https://img.shields.io/github/discussions/victornpb/undiscord?style=flat-square)](https://github.com/victornpb/undiscord/discussions)
-[![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/victornpb/undiscord?style=flat-square&color=green)](https://github.com/victornpb/undiscord/pulls?q=is%3Apr+is%3Aclosed)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed/victornpb/undiscord?style=flat-square&color=green)](https://github.com/victornpb/undiscord/issues?q=is%3Aissue+is%3Aclosed)
-<!-- end shields -->
+Undiscord 2.0 – Temporary Compatibility Fix
 
-> ⚠️ **Any tool that automates actions on user accounts, including this one, could result in account termination.** (see [self-bots][self-bots]).  
-> Use at your own risk! ([discussion](https://github.com/victornpb/undiscord/discussions/273)).
+This script was created with the assistance of Claude AI to help restore functionality to the Undiscord message deletion tool, which is currently broken due to recent changes on Discord's side. The purpose of this script is to temporarily patch the issue so users can continue deleting messages until the official project releases an updated version.
 
-(Due to changes in chrome manifest V3, [Brave browser][brave_browser] is recommended)
+This is not a rewrite of Undiscord. The core logic, deletion engine, and interface are based on the original Undiscord projects. Only small compatibility adjustments have been made to allow the script to function again with Discord's current behavior.
 
-1. First you need a Browser Extension for managing UserScripts[[1]][userscrips_faq] (skip if you already have one): '
-   * Brave: [Violentmonkey][chrome_violentmonkey] or [Tampermonkey][chrome_tampermonkey]
-   * Chrome: [Violentmonkey][chrome_violentmonkey] or [Tampermonkey][chrome_tampermonkey]
-   * Firefox: [Greasemonkey][firefox_greasemonkey], [Tampermonkey][firefox_tampermonkey], or [Violentmonkey][firefox_violentmonkey]  
-   * Opera: [Tampermonkey][opera_tampermonkey] or [Violentmonkey][opera_violentmonkey]
-   * Edge: [Tampermonkey][edge_tampermonkey]  
-   * Safari: ~[Tampermonkey][safari_tampermonkey]~ 
-    
-1. Install Undiscord:  
-  [![][greasyfork_icon]][greasyfork_url] or [![][openuserjs_icon]][openuserjs_url]  
-  (NOTE: GreasyFork is recommended for now, OpenUserJS is not receiving updates)
+Undiscord is confirmed to be broken as of 11 March 2026. The original developers are already aware of the issue and are actively working on an official fix. This script exists primarily as a temporary workaround until that update is released.
 
-1. Open <a href="https://discord.com/channels/@me" target="_blank">Discord</a> in your __browser__ (Not the App) and go to the channel or direct message you would like to be wiped.
+Interface Differences
 
-1. Click the <kbd>🗑️</kbd> button that was added in the top right corner.
+This script uses a slightly modified UI compared to the original Undiscord implementation. The goal of these changes is mainly usability and compatibility with the current Discord interface.
 
-1. Click on the buttons near **Author ID** and **Server ID** and **Channel ID**.  
+Because of these differences, this script may continue receiving small updates or maintenance if needed. However, there is no guarantee of long-term maintenance, and the official Undiscord project should always be considered the primary source.
 
-1. Click the ![Delete](https://user-images.githubusercontent.com/3372598/223744853-c0d4d9e3-1914-486b-bb4f-f27e40d0e3e7.png) button to begin wipping! 
+What this script does
 
+Restores the ability to delete messages in Discord channels and direct messages
+Uses the original Undiscord deletion engine
+Implements a slightly modified UI for compatibility and usability
+Applies minimal fixes required for the script to function again
+No major functionality has been redesigned. The objective is simply to restore usability while remaining as close as possible to the original project.
 
-![Screenshot](https://user-images.githubusercontent.com/3372598/222977831-88eeb59a-186a-4947-8e33-0ac245c3af5c.gif)
+Original Projects / Credits
 
-I made this tool just for you ❤️ , it would be awesome if you could just click the [⭐️ Star button](https://github.com/victornpb/undiscord) at the top!
+The functionality and interface used in this script are derived from the following projects:
 
-> A few extra generous people asked for this, so here you can [buy me a coffee](https://www.buymeacoffee.com/vitim). Thank you! You'll be in my special list ^_^
+Undiscord (Deletion Engine) https://greasyfork.org/en/scripts/406540-undiscord
+https://github.com/victornpb/undiscord
 
-----
-### Need help?
-Check out the [wiki](https://github.com/victornpb/undiscord/wiki) for helpful articles, or read existing [questions](https://github.com/victornpb/undiscord/discussions), or post a new one.
+Undiscord UI implementation https://github.com/SuicidaI-Idol/undiscord
 
-### Have an Idea or Feature request?
-Check out the [Ideas][ideas] section, if your idea _hasn't been posted before_, please post a new one.
+All credit goes to the Undiscord Team and SuicidaI-Idol for the original work. This script only provides a compatibility patch and does not claim ownership of the original project.
 
-### Found a bug?
-Is prefered that _issues_ follow a certain format. If you're not familiar with bug reports, please use the [discussions][discussions] tab instead.
+Important Notice
 
-If you believe you found a bug please file an [issue](https://github.com/victornpb/undiscord/issues), but please fill the issue template.
+Tools that automate actions on Discord user accounts, including message deletion scripts, may violate Discord's Terms of Service. Using automation tools on your account could result in account restrictions, suspension, or termination.
 
-If you are looking to contribute please read the [CONTRIBUTING](./CONTRIBUTING.md) first.
+Use this script at your own risk.
 
-### Copy paste version
-Looking for the old Copy/Paste version? [here](https://github.com/victornpb/undiscord/wiki/Copy-paste-method)
+Security Warning
 
+Never share your Discord authentication token with anyone. Anyone with access to your token has full access to your account. If you accidentally expose your token, immediately log out of Discord on that browser and change your password to invalidate existing sessions.
 
-----
+Browser Compatibility
 
-Originally from https://gist.github.com/victornpb/135f5b346dea4decfc8f63ad7d9cc182
+This script requires a userscript manager extension.
 
-----
-## ⛔️ DO NOT SHARE YOUR AUTH TOKEN! ⛔️ ##
+Common options include:
 
-Sharing your authToken on the internet will give full access to your account! [There are bots gathering credentials all over the internet](https://github.com/rndinfosecguy/Scavenger).
-If you post your token by accident, LOGOUT from discord on that **same browser** you got that token imediately.
-Changing your password will make sure that you get logged out of every device. I advice that you turn on [2FA](https://support.discord.com/hc/en-us/articles/219576828-Setting-up-Two-Factor-Authentication) afterwards.
+Violentmonkey
+Tampermonkey
+Greasemonkey
+Due to changes introduced by Chrome Manifest V3, some users report better compatibility when using browsers such as Brave with a userscript manager.
 
-If you are unsure do not post screenshots, or logs on the internet.
+Temporary Nature of This Script
 
-----
-## Security Concerns
-
-Using third-party scripts means you trust that the script’s developer hasn’t inserted malicious functionality into the code and has secured it against attackers trying to do the same. You should never run code you don't trust.
-
-Please read: [what I'm doing to ensure this is safe for users][security_policy].
-
-----
-#### DISCLAIMER
-
-> THE SOFTWARE AND ALL INFORMATION HERE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
->
-> By using any code or information provided here you are agreeing to all parts of the above Disclaimer.
-
-
-
-
-<!-- links -->
-  [self-bots]: https://support.discordapp.com/hc/en-us/articles/115002192352-Automated-user-accounts-self-bots-
-  [userscrips_faq]: https://en.wikipedia.org/wiki/Userscript
-  [greasyfork_icon]: https://user-images.githubusercontent.com/3372598/166113712-1bc3d654-1342-4f1e-9845-21c3b21524b1.png
-  [openuserjs_icon]: https://user-images.githubusercontent.com/3372598/166113714-5a2ede39-8d66-43a8-b5da-8f1897cb3121.png
-  [greasyfork_moderation]: https://greasyfork.org/en/moderator_actions
-
-  [issues]: https://github.com/victornpb/undiscord/issues
-  [issues_open]: https://github.com/victornpb/undiscord/issues
-  [issues_closed]: https://github.com/victornpb/undiscord/issues
-  [prs]: https://github.com/victornpb/undiscord/pulls
-  [pr_open]: https://github.com/victornpb/undiscord/pulls
-  [prs_closed]: https://github.com/victornpb/undiscord/pulls
-  [forks]: https://github.com/victornpb/undiscord/network/members
-
-  [wiki]: https://github.com/victornpb/undiscord/wiki
-  [discussions]: https://github.com/victornpb/undiscord/discussions
-  [ideas]: https://github.com/victornpb/undiscord/discussions/categories/2-ideas
-  [questions]: https://github.com/victornpb/undiscord/discussions/categories/1-questions-answers
-  [security_policy]: https://github.com/victornpb/undiscord/wiki/Security-Policy
-
-<!-- Extensions -->
-  [chrome_violentmonkey]: https://chrome.google.com/webstore/detail/violent-monkey/jinjaccalgkegednnccohejagnlnfdag
-  [chrome_tampermonkey]: https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
-  [firefox_greasemonkey]: https://addons.mozilla.org/firefox/addon/greasemonkey/
-  [firefox_tampermonkey]: https://addons.mozilla.org/firefox/addon/tampermonkey/
-  [firefox_violentmonkey]: https://addons.mozilla.org/firefox/addon/violentmonkey/
-  [safari_tampermonkey]: https://github.com/victornpb/undiscord/issues/91#issuecomment-654514364
-  [edge_tampermonkey]: https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd
-  [opera_tampermonkey]: https://addons.opera.com/extensions/details/tampermonkey-beta/
-  [opera_violentmonkey]: https://addons.opera.com/extensions/details/violent-monkey/
-
-<!-- Download links -->
-  [greasyfork_url]: <https://greasyfork.org/en/scripts/406540-undiscord-delete-all-messages-in-a-discord-channel-or-dm-bulk-deletion> "Get Undiscord from GreasyFork"
-  [openuserjs_url]: <https://openuserjs.org/scripts/victornpb/Undiscord_-_Delete_all_messages_in_a_Discord_channel_or_DM_(Bulk_deletion)> "Get Undiscord from OpenUserJS"
-
-  [brave_browser]: https://brave.com/download/
+This fix is primarily intended as a stopgap solution while the official Undiscord project is being updated. Once the original project releases an official fix, this script may become unnecessary.

@@ -1,4 +1,4 @@
-**Undiscord – Temporary Compatibility Fix**
+**Undiscord 2.0 – Temporary Compatibility Fix**
 
 This script was created with the assistance of **Claude AI** to help restore functionality to the Undiscord message deletion tool, which is currently broken due to recent changes on Discord's side. The purpose of this script is to temporarily patch the issue so users can continue deleting messages until the official project releases an updated version.
 

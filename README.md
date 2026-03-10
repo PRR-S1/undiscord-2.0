@@ -1,5 +1,7 @@
 **Undiscord 2.0 – Temporary Compatibility Fix**
 
+Download link - https://greasyfork.org/en/scripts/569218-undiscord-2-0
+
 This script was created with the assistance of **Claude AI** to help restore functionality to the Undiscord message deletion tool, which is currently broken due to recent changes on Discord's side. The purpose of this script is to temporarily patch the issue so users can continue deleting messages until the official project releases an updated version.
 
 This is **not a rewrite of Undiscord**. The core logic, deletion engine, and interface are based on the original Undiscord projects. Only small compatibility adjustments have been made to allow the script to function again with Discord's current behavior.
